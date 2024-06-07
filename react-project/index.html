@@ -4,18 +4,28 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport"  content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="/index.css" />	
+	<script>
+		function clicky() {
+			console.log("clicked!");
+			alert("clicked!");
+		}
+	</script>
 </head>
 <body>
 
 	<div id="page">
 		<h1> Training React </h1>
 		<p> We are going to include a React.js application here: </p>
-		
+
 		<div id="app-container">
 			<div id="root">This will be replaced with a React app</div>
 		</div>
+		<br/>
+		<button onClick="clicky(); return false;">Click</button>
+
 	</div>
 
 <script type="module" src="/src/main.jsx"></script>
+
 </body>
 </html>
